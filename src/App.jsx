@@ -18,7 +18,7 @@ function App() {
   }
 
   const formatter = (text) => {    
-    return text.replace(/\s([P][M])|\s([p][m])/g, 'pm').replace(/\s([A][M])|\s([a][m])/g, 'am').replace(/([,])/g, ', ').replace(/(\s)(\s)/g, ' ').replace(/[)]/g, '').replace(/[(]/g, '\n')
+    return text.replace(/\s([P][M])|\s([p][m])/g, 'pm').replace(/\s([A][M])|\s([a][m])/g, 'am').replace(/([,])/g, ', ').replace(/(\s)(\s)/g, ' ').replace(/[)]\s/g, '\n').replace(/[(]/g, '\n')
   }
 
   return (
