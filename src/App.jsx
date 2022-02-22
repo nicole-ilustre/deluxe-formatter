@@ -13,6 +13,7 @@ function App() {
   }
 
   const handleSubmit = () => {
+    console.log(textInput)
     setFormattedText(formatter(textInput));
     setIsSubmitted(true);
   }
